@@ -50,15 +50,14 @@ function LabelList() {
     });
     setProducts([...filteredData]);
   };
-  
+
   //search function
   const searchLable = async (from) => {
     if (from) {
       if (searchBy.searchFor === "lable") {
         const url = `${process.env.REACT_APP_BASE_URL}/apidata/serach/${searchBy.from}`;
         const response = await axios.get(url);
-
-        if (response.data.searchData.length === 0) {
+       if (response.data.searchData.length === 0) {
         } else {
           setProducts([...response.data.searchData]);
         }
@@ -66,8 +65,7 @@ function LabelList() {
       if (searchBy.searchFor === "date") {
         const url = `${process.env.REACT_APP_BASE_URL}/apidata/serachbydate/${searchBy.from}/${searchBy.to}`;
         const response = await axios.get(url);
-
-        if (response.data.searchData.length === 0) {
+       if (response.data.searchData.length === 0) {
           setProducts([...response.data.searchData]);
         } else {
           setProducts([...response.data.searchData]);
@@ -91,8 +89,7 @@ function LabelList() {
             setSearchBy({ ...searchBy, from: e.target.value });
           }}
         />
-
-        {searchBy.searchFor === "date" ? (
+          {searchBy.searchFor === "date" ? (
           <>
             To:
             <input
@@ -140,7 +137,6 @@ function LabelList() {
                       <td>{value.lable}</td>
                       <td>{value.amount}</td>
                       <td>{value.createdAt}</td>
-
                       <td>
                         <button>
                           <Link to={`/updatelist/${value._id}`}>
