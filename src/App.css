@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* css */
+body{
+  background-color: beige;
+}
+
+
+.inputBox {
+  padding: 7px;
+   border: 1px solid skyblue;
+  width: 300px;
+  margin: 20px;
+}
+
+.appButton {
+  margin: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: skyblue;
+  border: solid 1px;
+  cursor: pointer;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: skyblue;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-ul {
+  padding: 5px;
+  margin: 0px;
+  background-color: skyblue;
+}
+
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+.product tr td {
+  
+  width: 500px;
+  border: 1px solid skyblue;
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+ .product button  .btn-product{
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  background: skyblue;
+  color: black;
+
+ }
+
+ a{
+  color: black;
+  text-decoration: none;
+ }
+
+ .product tr:nth-child(2n){
+  background-color: lightgray;
+}
+table{
+  border-collapse: collapse;
+ }
+
+ .Lable-list .search-product, #select-product{
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+input, select, button{
+  margin: 10px 10px;
+  outline: none;
+  border: none;
+}
+
+input,select:focus{
+  box-shadow : 0px 0px 10px rgb(16, 157, 213);
+}
+select option{
+  border-radius: 10px;
+}
+
+.select-product .option-fields{
+  border-radius: 10px;
+}
